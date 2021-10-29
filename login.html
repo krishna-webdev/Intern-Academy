@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Eduford.com</title>
+	<link rel="stylesheet" type="text/css" href="edu.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.header1{
+			background-image: none;
+		}
+		body{
+			background-color: black;
+			overflow-x: hidden;
+		}
+	</style>
+</head>
+<body>
+<section class="sub-header2">
+	 <nav>
+		 	<a href="index.html"><img src="images/logo.png"></a>
+		 	<div class="searchbar">
+                      <input class="search_input" type="text" name="" placeholder="Search...">
+                      <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+            </div>
+		 	<div class="nan-links" id="navlinks1">
+		 		
+		 		<ul>
+		 			<li><a class="header" href="course.html">HOME</a></li>
+		 			<li><a class="header" href="#">CATEGORIES<i class='fa fa-caret-down'></i></a></li>
+		 				<div class="dropdown">
+		 					<a>Web Development</a>
+		 					<a>Data Science</a>
+		 					<a>Machine Learning</a>
+		 					<a>IT & Software</a>
+		 					<a>Health and Fitness</a>
+		 					<a>Blockchain</a>
+		 				</div>
+		 			<li><a class="header" href="Mylearn.html">MY LEARNING</a></li>
+		 			<li><a class="header" href="contact.html">CONTACT</a></li>
+		 			<li><a class="header" href="login.html">LOGIN</a></li>
+		 		</ul>
+		 	</div>
+		 </nav>
+
+<!------------------------login page------------->
+<section>
+
+<br>
+<br>
+	<div class="account-page">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-2">
+					<div class="form-container">
+						<div class="form-btn">
+						<span onclick="login()">Login</span>
+						<span onclick="register()">Register</span>	
+						<hr id="indicator">
+					</div>
+
+					<form id="loginform">
+						<input type="text" placeholder="username">
+						<input type="password" placeholder="password">
+						<button type="submit" class="btn">Login</button><br>
+						<a href="">Forget Password</a>
+					</form>
+					<form id="registerform">
+						<input type="text" placeholder="username">
+						<input type="email" placeholder="email">
+						<input type="password" placeholder="password">
+						<button type="submit" class="btn">Register</button>
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+          <section class="footer">
+          	<div class="icons">
+     		<i class="fa fa-facebook"></i>
+     		<i class="fa fa-twitter"></i>
+     		<i class="fa fa-instagram"></i>
+     		<i class="fa fa-linkedin"></i>
+     	</div>
+     	 <div class="footer-copyright" style="color:whitesmoke !important;">
+                <div class="container">
+                  <h5>
+                    <p>Copyright © 2021 EDUFORD • All rights reserved
+                    </p>
+                  </h5><br>
+                </div>
+            </div>
+        </section>
+
+
+<!----------------js for toogle form--------->
+
+	<script type="text/javascript">
+		var loginform = document.getElementById("loginform");
+		var registerform = document.getElementById("registerform");
+		var indicator = document.getElementById("indicator");
+
+				function register(){
+					registerform.style.transform = "translateX(0px)";
+					loginform.style.transform = "translateX(0px)";
+					indicator.style.transform = "translateX(100px)";
+				}
+
+				function login(){
+					registerform.style.transform = "translateX(300px)";
+					loginform.style.transform = "translateX(300px)";
+					indicator.style.transform = "translateX(0px)";
+				}
+	</script>
+
+</body>
+</html>
